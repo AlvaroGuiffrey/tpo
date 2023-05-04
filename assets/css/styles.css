@@ -1,0 +1,170 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ------ HEADER ------ */
+header {
+    height: 80px;
+    
+}
+
+.info-header {
+    width: 50%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    float: right;
+    font-size: 0.8em;
+    background-color: blue;
+    color: white;
+    text-align: left;
+    border-radius: 0px 0px 0px 15px;
+}
+
+.info-header span {
+    margin-left: 20px;
+}
+
+img.logo {
+    padding-top: 10px;
+    float: left;
+}
+
+/* ------ NAV ------ */
+nav {
+    overflow: hidden;
+    background-color: lightgray;
+}
+
+nav a {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 14px;
+    color: grey; 
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.nav a:hover {
+    border-bottom: solid blue 2px;
+    color: blue;
+    background-color: lightgray;
+}
+
+.activa {
+    color: orange;
+    background-color: blueviolet;
+    border-bottom:solid blueviolet 2px;
+}
+
+.nav .icon {
+    display: none;
+    float: right;
+    background-color: grey;
+    border-bottom:solid grey 2px;
+    color: white;
+}
+
+/* ------ MAIN ------ */
+main {
+    
+    min-height: calc(90vh - 120px);
+    
+}
+
+/* ------ FOOTER ------ */
+footer {
+    background-color: lightgray;
+    color: grey;
+    font-size: 12px;
+    min-height: 10vh;
+}
+
+.f-reng {
+    display: inline-block;
+    padding-top: 10px;
+}
+
+.redes {
+    font-size: 24px; 
+    padding-top: 5px;
+}
+
+a.red {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: grey;
+    text-decoration: none;
+    border-bottom: 1px solid lightgray;
+}
+
+a.red:hover {
+    color: blue;
+    text-decoration: none;
+    border-bottom: 1px solid blue;
+}
+
+
+/* -- CLASES COMUNES -- */
+.centro {
+    text-align: center;
+}
+
+/* --- MEDIA QUERY ---- */
+@media screen and (max-width: 350px) {
+    .info-header, .f-sep{
+        display: none;         
+    }
+    .f-reng {
+        display: block;
+    }
+        
+}
+
+@media screen and (max-width: 450px) {
+    .info-header {
+        width: 40%;         
+    }
+    a.red {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 30px; 
+    }
+}
+  
+@media screen and (max-width: 600px) {
+    .domi {
+        display: none;
+    }
+    .nav {
+        display: block;
+    }
+    .nav a {
+        display: none;
+    }
+    .nav a.icon {
+        float: right;
+        display: block;
+    }
+    .nav.responsive {
+        position: relative;
+    }
+    .nav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .nav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    
+}
+  
