@@ -9,6 +9,7 @@
   <!-- Icons Font Awesome-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="../../assets/css/styles.css">
+  <link rel="stylesheet" href="../../assets/css/nosotros.css">
 </head>
 <body>
   <header>
@@ -26,7 +27,73 @@
     <a href="./contacto.html">Contacto</a>
     <a href="javascript:void(0);" class="icon" onclick="funcionMenu()"><i id="icon-menu" class="fa-solid fa-bars"></i></a>
   </nav>
-  <main></main>
+  <main>
+    <section>
+      <fieldset>  
+        <h3>GRUPO 16 - COMISIÓN 23030</h3>
+        <p>Somos un grupo de estudiantes de la Comisión 23030 
+          del curso PYTHON-FRONT END 2023 1 del programa <b>Codo a Codo 4.0</b> 
+          implementado por la Agencia de Aprendizaje a lo largo de la vida 
+          del Ministerio de Educación del Gobierno de la Ciudad de Buenos Aires.</p>
+        <p>Nos constituimos para hacer el <b>Trabajo Practico Obligatorio - TPO</b>.</p>
+      </fieldset>
+    </section>
+    <section>
+      <fieldset>
+        <h3>EQUIPO</h3>
+        <!-- Jonathan -->
+        <div class="persona">
+          <img src="../media/persona.png" width="75" alt="Jon" />
+          <h5>Jonathan Romero Benitez</h5>
+          <p class="categoria">Alumno Coordinador</p>
+          <p>Estudiante de economía en Universidad ...</p>
+          <button id="btoJon" class="contacto" title="Mostrar datos " onClick="verContactoNosotros('#btoJon', '#iconBtoJon', '#infoJon')">
+            Contacto <i id="iconBtoJon" class="fa-regular fa-eye"></i> 
+          </button>
+          <div id="infoJon" hidden>
+            <span class="dato"><i class="fa-solid fa-mobile-screen-button"></i> </span>
+            <span class="dato"><i class="fa-regular fa-envelope"></i> </span>
+            <span class="dato"><i class="fa-brands fa-whatsapp"></i></span>
+            <img class="dato-qr" src="" alt="QR whatsapp">  
+          </div>
+        </div>
+        <!-- Franco -->
+        <div class="persona">
+          <img src="../media/persona.png" width="75" alt="Fran" />
+          <h5>Franco Alanoca</h5>
+          <p class="categoria">Alumno</p>
+          <p>Estudiante de .... en Universidad</p>
+          <button id="btoFran" class="contacto" title="Mostrar datos " onClick="verContactoNosotros('#btoFran', '#iconBtoFran', '#infoFran')">
+            Contacto <i id="iconBtoFran" class="fa-regular fa-eye"></i>
+          </button>
+          <div id="infoFran" hidden>
+            <span class="dato"><i class="fa-solid fa-mobile-screen-button"></i> </span>
+            <span class="dato"><i class="fa-regular fa-envelope"></i> </span>
+            <span class="dato"><i class="fa-brands fa-whatsapp"></i></span>
+            <img class="dato-qr" src="" alt="QR whatsapp">
+          </div>
+        </div>
+        <!-- Alvaro -->
+        <div class="persona">
+          <img class="foto" src="../media/persona.png" width="75" alt="Alvaro" />
+          <h5>Alvaro A Guiffrey</h5>
+          <p class="categoria">Alumno</p>
+          <p>Programador en empresa de diseño de muebles.</p>
+          <button id="btoAlvaro" class="contacto" title="Mostrar datos " onClick="verContactoNosotros('#btoAlvaro', '#iconBtoAlvaro', '#infoAlvaro')">
+            Contacto <i id="iconBtoAlvaro" class="fa-regular fa-eye"></i>
+          </button>
+          <div id="infoAlvaro" hidden>
+            <span class="dato"><i class="fa-solid fa-mobile-screen-button"></i> 3447 491836</span>
+            <span class="dato"><i class="fa-regular fa-envelope"></i> alvaroguiffrey@gmail.com</span>
+            <span class="dato"><i class="fa-brands fa-whatsapp"></i>+54 9 343 536-7683</span>
+            <img class="dato-qr" src="../../assets/media/alvaro_qr_code.png" alt="QR whatsapp">
+          </div>
+          
+        </div>
+      </fieldset>
+    </section>
+    
+  </main>
   <footer>
     <div class="centro">
       <span class="f-reng">Derechos Reservados &COPY; 2023 </span><span class="f-sep"> - </span><span class="f-reng"> Codo a Codo </span>

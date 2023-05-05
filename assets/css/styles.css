@@ -1,5 +1,9 @@
+/* ------ GOOGLE FONTS ------ */
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Righteous&display=swap');
+
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', 'Roboto', Arial, sans-serif;
     margin: 0;
     box-sizing: border-box;
 }
@@ -135,6 +139,7 @@ a.red:hover {
         padding-left: 20px;
         padding-right: 20px;
         font-size: 30px; 
+        
     }
 }
   
