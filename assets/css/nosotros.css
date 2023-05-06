@@ -1,5 +1,5 @@
 section {
-    width: 60%;
+    width: 70%;
     margin: auto;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -27,9 +27,8 @@ section p {
 }
 
 .persona img.foto {
-    border-radius: 50%;
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
-    margin: 0.8em 0 1em;
+    border-radius: 5%;
+    margin: 0.8em 0 0 0;
 }
 
 .persona h5 {
@@ -61,6 +60,7 @@ button.contacto {
 
 button.contacto.act {
     background-color: grey;
+    border-color: grey;
 }
 
 button.contacto:hover {
@@ -84,13 +84,13 @@ span.dato {
 .dato-qr:hover {
     -ms-transform: scale(3); /* IE 9 */
     -webkit-transform: scale(3); /* Safari 3-8 */
-    transform: scale(3); 
+    transform: scale(3) translate(0px, -40px);
 }
 
 /* --- MEDIA QUERY ---- */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 767px) {
     section {
-        width: 70%;
+        width: 80%;
     }
     .persona {
         width: 48%;
@@ -98,7 +98,7 @@ span.dato {
     .dato-qr:hover {
         -ms-transform: scale(3); /* IE 9 */
         -webkit-transform: scale(3); /* Safari 3-8 */
-        transform: scale(3); 
+        transform: scale(3) translate(0px, -40px); 
     }
 }
 
@@ -106,11 +106,11 @@ span.dato {
     .dato-qr:hover {
         -ms-transform: scale(4); /* IE 9 */
         -webkit-transform: scale(4); /* Safari 3-8 */
-        transform: scale(4); 
+        transform: scale(4) translate(0px, -40px); 
     }
 }
   
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 480px) {
     section {
         width: 90%;
     }
@@ -120,6 +120,7 @@ span.dato {
     .dato-qr:hover {
         -ms-transform: scale(2); /* IE 9 */
         -webkit-transform: scale(2); /* Safari 3-8 */
-        transform: scale(2); 
+        transform: scale(2) translate(0px, -40px); 
+        
     }
 }

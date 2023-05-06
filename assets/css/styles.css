@@ -131,7 +131,7 @@ a.red:hover {
         
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 480px) {
     .info-header {
         width: 40%;         
     }
@@ -143,7 +143,7 @@ a.red:hover {
     }
 }
   
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
     .domi {
         display: none;
     }
