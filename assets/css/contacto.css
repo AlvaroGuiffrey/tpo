@@ -1,0 +1,122 @@
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: auto;
+}
+
+section {
+    width: 60%;
+    padding: 10px;
+    
+}
+
+.formulario {
+    width: 100%; 
+    background-color: rgb(235, 233, 233);
+
+}
+
+input, label, textarea {
+    display: block;
+    font-size: 0.7em;
+    width: 90%;
+    padding: 10px;
+    margin-left: 5%;
+}
+
+div.botones{
+    text-align: center;
+    padding-top: 5px;
+}
+
+button {
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+#btEnviar {
+    background-color: blue;
+    color: white;
+    border-color: blue;
+}
+
+#btEnviar:hover {
+    background-color: #2e64a1;
+}
+
+#btBorrar {
+    background-color: grey;
+    color: white;
+    border-color: grey;
+}
+
+#btBorrar:hover {
+    background-color: rgb(184, 183, 183);
+}
+
+aside {
+    width: 40%;
+    padding: 10px;
+}
+
+.medios {
+    padding: 20px 40px;
+}
+
+.medios span {
+    display: block;
+    margin-bottom: 20px;
+    color: grey;
+    font-size: 1em;
+ }
+
+ .medios i {
+    font-size: 1.5em;
+ }
+
+h3 {
+    text-align: center;
+    color: blue;
+}
+
+p {
+    font-size: 0.9em;
+    text-align: center;
+    padding-top: 5px;
+}
+
+/* --- MEDIA QUERY ---- */
+@media screen and (max-width: 940px) {
+    .flex-container {
+        width: 80%;
+    }    
+}
+
+@media screen and (max-width: 767px) {
+    .flex-container {
+        width: 90%;
+    }    
+}
+
+@media screen and (max-width: 680px) {
+    .flex-container {
+        width: 80%;
+        flex-direction: column;
+        margin: auto;
+    }  
+    section, aside {
+        width: 100%;
+    }  
+}
+
+@media screen and (max-width: 480px) {
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+    }
+    
+}
