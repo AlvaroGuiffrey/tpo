@@ -1,0 +1,64 @@
+
+section {
+    width: 78%;
+    display:inline-block;
+    margin: 10px 0px;
+    border: solid 1px red;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+section h3 {
+    text-align: center;
+    color: blue;
+}
+
+aside {
+    width: 20%;
+    display:inline-block;
+    margin: 10px 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(235, 233, 233);
+}
+
+aside h3, h5 {
+    text-align: center;
+    color: blue;
+}
+
+aside h6 {
+    text-align: center;
+}
+
+aside div#contenedorCard{
+    width: 100%;
+    padding: 5px;
+}
+
+aside div.cardExpe {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid grey;
+}
+
+aside div.comentario {
+    font-size: 0.7em;
+    font-style: italic;
+    text-align: center;
+}
+
+aside div#puntaje p {
+    font-size: 0.5em;
+}
+
+@media screen and (max-width: 767px) {
+    section {
+        width: 100%;
+        display: block;
+    }
+    aside {
+        width: 100%;
+        display: block;
+    }
+}
