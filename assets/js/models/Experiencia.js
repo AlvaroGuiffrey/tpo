@@ -7,6 +7,7 @@ export class Experiencia {
 
     /* METODOS */
     getDivCardExperiencia(idToInsert) {
+        
         /*selecciona el elementro padre*/
         let parent = document.getElementById(idToInsert);
         /*crea un elemento a indexar o inyectar*/
@@ -14,24 +15,32 @@ export class Experiencia {
         div.classList.add('cardExpe');
         
         /*le agreo lo que inyecto*/
-        div.innerHTML = `
+        let codigo = `
         <h6>${this.nombre}</h6>
         <div class="comentario">
             <p> ${this.comentario} </p>
-            
         </div>
         <div id="puntaje">
-            <center>
-                <i class="fas fa-star fa-sm" style="color: #e4d507;"></i>
-                <i class="fas fa-star fa-sm" style="color: #e4d507;"></i>
-                <i class="fas fa-star fa-sm" style="color: #e4d507;"></i>
-                <i class="fas fa-star fa-sm" style="color: #e4d507;"></i>
-                <i class="fas fa-star fa-sm" style="color: #e4d507;"></i>
+            <center>`;
+        codigo += this.getEstrellas();   
+        codigo += `
                 <p> Puntaje: ${this.puntaje} </p>
             </center>
         </div>
         `;
+
+        div.innerHTML = codigo;
         /* agrego elemento hijo al padre*/
         parent.appendChild(div);
+
+        
+    }
+
+    getEstrellas() {
+        let codigoEst = '';
+        for (let index = 0; index < this.puntaje; index++) {
+            codigoEst += '<i class="fas fa-star fa-sm" style="color: #e4d507;"></i>';
+        }
+        return codigoEst;
     }
 }

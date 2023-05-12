@@ -31,3 +31,4 @@ function verContactoNosotros(selector1, selector2, selector3) {
     i.className = "fa-regular fa-eye";
   }
 }
+
