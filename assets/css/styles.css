@@ -11,7 +11,6 @@
 /* ------ HEADER ------ */
 header {
     height: 80px;
-    
 }
 
 .info-header {
@@ -32,7 +31,7 @@ header {
 }
 
 img.logo {
-    padding-top: 10px;
+    padding-top: 5px;
     float: left;
 }
 
@@ -52,19 +51,19 @@ nav a {
     float: left;
     display: block;
     text-align: center;
-    padding: 10px 20px;
+    padding: 10px 30px;
 }
 
 .nav a:hover {
-    border-bottom: solid blue 2px;
-    color: blue;
+    border-bottom: solid #ff5f7c 2px;
+    color: #ff5f7c;
     background-color: lightgray;
 }
 
 .activa {
-    color: orange;
-    background-color: blueviolet;
-    border-bottom:solid blueviolet 2px;
+    color: red;
+    background-color: #ff96aa;
+    border-bottom:solid #ff96aa 2px;
 }
 
 .nav .icon {
@@ -109,9 +108,9 @@ a.red {
 }
 
 a.red:hover {
-    color: blue;
+    color: #ff5f7c;
     text-decoration: none;
-    border-bottom: 1px solid blue;
+    border-bottom: 1px solid #ff5f7c;
 }
 
 

@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TPO-Inicio</title>
-  <link rel="icon" type="image/x-icon" href="./assets/media/TPO_logo_ch.png">
+  <title>AlmaBichera</title>
+  <link rel="icon" type="image/x-icon" href="./assets/media/almaBicheraIcom.png">
   <!-- Icons Font Awesome-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <!-- Estilos -->
@@ -15,21 +15,33 @@
 <body>
   <header>
     <div class="info-header">
-      <span class="tel"><i class="fa-solid fa-headset"></i> 011 4258-5555</span>
-      <span class="domi"><i class="fa-solid fa-location-dot"></i> Cerrito 1157 - CABA</span>
+      <span class="tel"><i class="fa-solid fa-headset"></i> 343 4525229</span>
+      <span class="domi"><i class="fa-solid fa-location-dot"></i> Condarco & Juan G. Miller - Paraná</span>
     </div>
-    <img class="logo" src="./assets/media/TPO.png" alt="TPO-codoacodo">
+    <img class="logo" src="./assets/media/almabichera.jpg" alt="AlmaBichera">
     
   </header>
   <nav id="navegador" class="nav">
     <a href="index.html" class="activa">Inicio</a>
     <a href="./assets/pages/actividad.html">Actividad</a>
-    <a href="./assets/pages/nosotros.html">Nosotros</a>
+    <a href="./assets/pages/nosotros.html">Nosotras</a>
     <a href="./assets/pages/contacto.html">Contacto</a>
     <a href="#" id="btMenu" class="icon"><i id="icon-menu" class="fa-solid fa-bars"></i></a>
   </nav>
   <main>
-    <section><h3>INICIO</h3>
+    <section>
+      <article>
+        <div class="promo">
+          <img class="img-promo" src="./assets/media/almaBicheraIcom.png" alt="IconoAlmaBichera">
+          <button class="bt-reg"><i class="fa-solid fa-file-pen"></i> Registrate</button>
+          <button class="bt-promo">-10%</button>
+          <h2 class="com">En todos los alimentos para mascotas</h2>
+          <div id="titu" class="titu-promo"><i class="fa-solid fa-tags"></i> PROMO JUNIO!!</div>
+        </div>
+      </article>
+      <h3>INICIO</h3>
+      <article>
+      <!-- 
       <div class="slideshow-container">
 
         <div class="mySlides fade">
@@ -50,7 +62,9 @@
           <div class="text">Caption Three</div>
         </div>
         
-        </div>
+      </div>
+      </article>
+      --> 
     </section>
     <aside>
       <h5>EXPERIENCIAS</h5>
@@ -59,37 +73,14 @@
   </main>
   <footer>
     <div class="centro">
-      <span class="f-reng">Derechos Reservados &COPY; 2023 </span><span class="f-sep"> - </span><span class="f-reng"> Codo a Codo </span>
+      <span class="f-reng">Derechos Reservados &COPY; 2023 </span><span class="f-sep"> - </span><span class="f-reng"> Alma Bichera </span>
     </div>
     <div class="redes centro">
-      <a href="https://www.facebook.com/" class="red"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.facebook.com/alma.bicheraParana/" class="red"><i class="fa-brands fa-facebook"></i></a>
       <a href="https://www.youtube.com/" class="red"><i class="fa-brands fa-youtube"></i></a>
-      <a href="https://www.instagram.com/" class="red"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.instagram.com/alma.bichera" class="red"><i class="fa-brands fa-instagram"></i></a>
     </div>
   </footer>
-
-  <script>
-    let slideIndex = 0;
-    showSlides();
-    let x = 1;
-    console.log(x);
-    
-    function showSlides() {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-     
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) {slideIndex = 1};    
-      
-      slides[slideIndex-1].style.display = "block";  
-      
-      setTimeout(showSlides, 3000); // Change image every 2 seconds
-    }
-    </script>
-                                                                                                                                                                                                                                           
 
   <script src="./assets/js/tpo.js"></script>
   <script type="module" src="./assets/js/index.js"></script>

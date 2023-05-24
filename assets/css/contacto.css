@@ -14,7 +14,6 @@ section {
 .formulario {
     width: 100%; 
     background-color: rgb(235, 233, 233);
-
 }
 
 input, label, textarea {
@@ -31,15 +30,14 @@ div.botones{
 }
 
 button {
-    border-radius: 5px;
     margin-bottom: 5px;
-    padding: 5px;
+    padding: 10px 20px;
 }
 
 #btEnviar {
     background-color: blue;
     color: white;
-    border-color: blue;
+    border: 0;
 }
 
 #btEnviar:hover {
@@ -49,7 +47,8 @@ button {
 #btBorrar {
     background-color: grey;
     color: white;
-    border-color: grey;
+    border: 0;
+    
 }
 
 #btBorrar:hover {
@@ -81,10 +80,27 @@ h3 {
     color: blue;
 }
 
-p {
+aside > p {
     font-size: 0.9em;
     text-align: center;
     padding-top: 5px;
+}
+
+.mapa {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.mapa iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 /* --- MEDIA QUERY ---- */

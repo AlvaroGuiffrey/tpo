@@ -16,9 +16,13 @@ section p {
     padding-top: 5px;
 }
 
-.persona {
-    width: 31%;
-    float: left;
+.contenedor-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.tarjeta {
+    width: 40%;
     margin: 1%;
     border: 1px solid #ddd;
     border-radius: 0.25em;
@@ -26,45 +30,51 @@ section p {
     text-align: center;
 }
 
-.persona img.foto {
+.tarjeta img.foto {
     border-radius: 5%;
     margin: 0.8em 0 0 0;
 }
 
-.persona h5 {
+.tarjeta img.foto-loc {
+    border-radius: 5%;
+    margin: 0.8em 0 0 0;
+}
+
+
+.tarjeta h5 {
     font-weight: normal;
     color: #0b6fe1;
     margin: 0;
     font-size: 0.9em;
 }
 
-.persona p.categoria {
+.tarjeta p.categoria {
     font-size: 0.6em;
     font-style: italic;
     text-align: center;
 }
 
-.persona p {
+.tarjeta p {
     font-size: 0.7em;
     padding: 0 0.4em 0.4em 0.4em;
     text-align: left;
 }
 
 button.contacto {
-    background-color: blue;
+    background-color: #5fbcff;
     color: white;
-    border-color: blue;
-    border-radius: 5px;
+    border: 0;
     margin-bottom: 5px;
+    padding: 10px 20px;
 }
 
 button.contacto.act {
     background-color: grey;
-    border-color: grey;
+    
 }
 
 button.contacto:hover {
-    background-color: #2e64a1;
+    background-color: #4086d7;
 }
 
 button.contacto i {
@@ -85,6 +95,14 @@ span.dato {
     -ms-transform: scale(3); /* IE 9 */
     -webkit-transform: scale(3); /* Safari 3-8 */
     transform: scale(3) translate(0px, -40px);
+}
+
+.mapa-local {
+    width: 80%; 
+}
+
+p.domi-loc {
+    text-align: center;
 }
 
 /* --- MEDIA QUERY ---- */
@@ -108,13 +126,19 @@ span.dato {
         -webkit-transform: scale(4); /* Safari 3-8 */
         transform: scale(4) translate(0px, -40px); 
     }
+    .tarjeta img.foto-loc {
+        width: 80%;
+    }    
 }
   
 @media screen and (max-width: 480px) {
     section {
         width: 90%;
     }
-    .persona {
+    .contenedor-flex {
+        flex-direction: column;
+    }
+    .tarjeta {
         width: 98%;
     }
     .dato-qr:hover {
