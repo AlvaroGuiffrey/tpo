@@ -1,0 +1,49 @@
+
+  
+   
+  .container-clima {
+    width: 200px;
+    margin: 10px auto;
+  }
+ 
+  .ciudad h3 {
+    color: grey;
+  }
+  
+  .condi {
+    text-transform: uppercase;
+    font-size: 10px;
+  }
+  
+  .temp {
+    font-size: 2rem;
+    font-weight: bold;
+    color: blue;
+  }
+  
+  .ciudad sup {
+    font-size: 0.5em;
+  }
+     
+  .icono-tiempo {
+    width: 50px;
+    height: 50px;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    
+  }
+  
+  @media screen and (max-width: 700px) {
+    .temp {
+      font-size: 2rem;
+    }
+        
+  }
+  
+  @media screen and (max-width: 500px) {
+    
+  }
+  
+  
+  

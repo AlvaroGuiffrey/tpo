@@ -11,12 +11,15 @@
   <!-- Estilos -->
   <link rel="stylesheet" href="./assets/css/styles.css">
   <link rel="stylesheet" href="./assets/css/index.css">
+  <link rel="stylesheet" href="./assets/css/apiOpenWeather.css">
 </head>
 <body>
   <header>
     <div class="info-header">
       <span class="tel"><i class="fa-solid fa-headset"></i> 343 4525229</span>
-      <span class="domi"><i class="fa-solid fa-location-dot"></i> Condarco & Juan G. Miller - Paraná</span>
+      <span class="domi"><i class="fa-solid fa-location-dot"></i>
+        <span id="domiHeader"> Condarco & Juan G. Miller - Paraná</span> 
+      </span>
     </div>
     <img class="logo" src="./assets/media/almabichera.jpg" alt="AlmaBichera">
     
@@ -33,7 +36,7 @@
       <article>
         <div class="promo">
           <img class="img-promo" src="./assets/media/almaBicheraIcom.png" alt="IconoAlmaBichera">
-          <button class="bt-reg"><i class="fa-solid fa-file-pen"></i> Registrate</button>
+          <button id="bt-reg" class="bt-reg"><i class="fa-solid fa-file-pen"></i> Registrate</button>
           <button class="bt-promo">-10%</button>
           <h2 class="com">En todos los alimentos para mascotas</h2>
           <div id="titu" class="titu-promo"><i class="fa-solid fa-tags"></i> PROMO JUNIO!!</div>
@@ -66,10 +69,38 @@
       </article>
       --> 
     </section>
+    
     <aside>
+      <h5>¡DALE, ME PASIAS!</h5>
+      <div class="container-clima"></div>
       <h5>EXPERIENCIAS</h5>
       <div id="contenedorCard"></div>
     </aside>
+    <!-- MODAL REGISTRO -->
+    <div id="formReg" class="modal">
+      <button id="bt-close" class="bt-close"><i class="fa-solid fa-circle-xmark"></i> CERRAR</button>
+      
+      <div class="contenedorForm">
+        <h1>¡SI, ME REGISTRO!</h1>
+      
+        <div class="formulario">
+          <form action="/">
+            <label for="nombre">Apellido y nombres</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Su nombre.." required>
+            <label for="celular">Nro Celular</label>
+            <input type="tel" id="celular" name="celular" placeholder="Su número.." required>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="mail" placeholder="Su e-mail.." required>
+            <label for="mascota">Tu mascota</label>
+            <input type="text" id="mascota" name="mascota" placeholder="Tu mascota.." required>
+            <div class="botones">
+              <button type="reset" id="btBorrar"><i class="fa-solid fa-eraser"></i> Borrar</button>
+              <button type="submit" id="btEnviar"><i class="fa-regular fa-paper-plane"></i> Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
   </main>
   <footer>
     <div class="centro">
@@ -84,5 +115,6 @@
 
   <script src="./assets/js/tpo.js"></script>
   <script type="module" src="./assets/js/index.js"></script>
+  <script type="module" src="./assets/js/apiOpenWeather.js"></script>
 </body>
 </html>

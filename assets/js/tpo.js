@@ -1,6 +1,19 @@
-/* --- EVENTOS Y FUNCIONES DEL MENU --- */
+/* --- EVENTOS Y FUNCIONES DEL HEADER --- */
+window.addEventListener("load", function(event) {
+  setInterval('cambioDomi()',3000);
+});
 
-var boton = document.getElementById('btMenu');
+function cambioDomi() {
+  let domi = document.getElementById('domiHeader');
+  if (domi.textContent == " Condarco & Juan G. Miller - Paraná") {
+    domi.textContent = " General Alvarado 2447 Bis - Paraná";
+  } else {
+    domi.textContent = " Condarco & Juan G. Miller - Paraná";
+  };
+}
+
+/* --- EVENTOS Y FUNCIONES DEL MENU --- */
+let boton = document.getElementById('btMenu');
 // Agregar un evento de clic al botón
 boton.addEventListener('click', 
   function funcionMenu() {

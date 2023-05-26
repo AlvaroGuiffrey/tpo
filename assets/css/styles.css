@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Righteous&display=swap');
 
 * {
-    font-family: 'Montserrat', 'Roboto', Arial, sans-serif;
+    font-family: 'Roboto', 'Montserrat', Arial, sans-serif;
     margin: 0;
     box-sizing: border-box;
 }
@@ -11,6 +11,11 @@
 /* ------ HEADER ------ */
 header {
     height: 80px;
+}
+
+img.logo {
+    padding-top: 5px;
+    float: left;
 }
 
 .info-header {
@@ -30,10 +35,6 @@ header {
     margin-left: 20px;
 }
 
-img.logo {
-    padding-top: 5px;
-    float: left;
-}
 
 /* ------ NAV ------ */
 nav {
