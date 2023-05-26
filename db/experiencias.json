@@ -1,38 +1,38 @@
 [
     {
         "id": 1,
-        "nombre": "Maria H",
+        "nombre": "Christian S",
         "puntaje": 5,
-        "comentario": "Excelente curso!! Lo recomiendo."
+        "comentario": "Mi gatita FER... ¡Feliz!."
     },
     {
         "id": 2,
         "nombre": "Jorge Daniel",
         "puntaje": 4,
-        "comentario": "Muy bueno, me resulto extenso."
+        "comentario": "Muy buena atención. Excelente!!!."
     },
     {
         "id": 3,
         "nombre": "José Robles",
         "puntaje": 5,
-        "comentario": "Muy completo!!!. El Profesor muy claro en sus explicaciones."
+        "comentario": "Muy completo!!!. Hay de todo para nuestras mascotas."
     },
     {
         "id": 4,
         "nombre": "Carlos J",
         "puntaje": 2,
-        "comentario": "No entendí nada, no lo volvería a hacer."
+        "comentario": "Humm! Estaba cerrado."
     },
     {
         "id": 5,
         "nombre": "Mariela Sanchez",
         "puntaje": 4,
-        "comentario": "Aprendí. Lo voy a recomendar a mis contactos."
+        "comentario": "Aprendí!!. Me asesoraron sobre alimentación saludable."
     },
     {
         "id": 6,
         "nombre": "Roberto",
-        "puntaje": 2,
-        "comentario": "No fue lo esperado. Abandoné."
+        "puntaje": 3,
+        "comentario": "No fue lo esperado. A mi perro no le gustó el alimento."
     }
 ]

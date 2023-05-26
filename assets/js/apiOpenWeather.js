@@ -37,6 +37,10 @@ fetch(url)
       <img class="icono-tiempo" src="${icon}" alt="${descripcion}">
     </figure>
     <span class="condi">${descripcion}</span>
+    <a class="credito" href="https://openweathermap.org/" title="Versión de uso gratuito">
+      <i class="fa-solid fa-circle-info"></i>
+       OpenWeather 
+    </a>
     </CENTER>
     </fieldset>
   `;
