@@ -32,8 +32,6 @@ export class Experiencia {
         div.innerHTML = codigo;
         /* agrego elemento hijo al padre*/
         parent.appendChild(div);
-
-        
     }
 
     getEstrellas() {
