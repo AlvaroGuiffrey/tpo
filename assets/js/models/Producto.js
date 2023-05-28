@@ -1,11 +1,13 @@
 export class Producto {
-    constructor(nombre, marca, precio, presentacion, comentario, imagen) {
+    constructor(nombre, marca, precio, stock, presentacion, comentario, imagen, linea) {
         (this.nombre = nombre), 
         (this.marca = marca), 
         (this.precio = precio), 
+        (this.stock = stock),
         (this.presentacion = presentacion), 
         (this.comentario = comentario),
-        (this.imagen = imagen);
+        (this.imagen = imagen),
+        (this.linea = linea);
     }
 
     /* METODOS */
@@ -18,7 +20,25 @@ export class Producto {
         div.classList.add('cardProducto');
         
         /*le agreo lo que inyecto*/
-        let codigo = `
+        let codigo = ``;
+
+        if (this.stock == 0) {
+            codigo += `
+            <span class="stock">SIN STOCK</span>
+            `;
+        }
+        
+        if (this.linea == "Premium") {
+            codigo += `
+            <span class="linea-pre">${this.linea}</span>
+            `;    
+        } else if (this.linea == "Económica") {
+            codigo += `
+            <span class="linea-eco">${this.linea}</span>
+            `;
+        }
+        
+        codigo += `
         <center>
         <img class="foto" src="../media/imagenProductos/${this.imagen}" width="75" alt="${this.nombre}" />
         <h5>${this.nombre}</h5>

@@ -1,0 +1,134 @@
+section {
+    width: 70%;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+section h3 {
+    text-align: center;
+    color: blue;
+}
+
+section p {
+    font-size: 0.8em;
+    text-align: justify;
+    padding-top: 5px;
+}
+
+div .contenedor-flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.cardProducto {
+    position: relative;
+    width: 30%;
+    margin: 1%;
+    border: 1px solid #ddd;
+    border-radius: 0.25em;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.linea-pre {
+    position: absolute;
+    z-index: 1;
+    left: 20px;
+    top: -5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    font-size: 0.7em;
+}
+
+.linea-eco {
+    position: absolute;
+    z-index: 1;
+    left: 20px;
+    top: -5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: orange;
+    color: white;
+    font-size: 0.7em;
+}
+
+.stock {
+    position: absolute;
+    z-index: 2;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    padding-top: 15%;
+    font-size: 1.7rem;
+    background-color: grey;
+    opacity: 0.4;
+}
+.cardProducto img.foto {
+    border-radius: 5%;
+    margin: 0.8em 0 0 0;
+    transition: transform .2s;
+}
+
+.foto:hover {
+    transform: scale(3) translate(0px, 20px);
+}
+
+.cardProducto h5 {
+    font-weight: normal;
+    color: #0b6fe1;
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.cardProducto p.marca {
+    font-size: 0.7em;
+    font-style: italic;
+    text-align: center;
+}
+
+.precio {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 2px 10px;
+    background-color: rgb(251, 240, 26);
+}
+.cardProducto p {
+    font-size: 0.6em;
+    padding: 0.4em 0.4em 0.4em 0.4em;
+    text-align: center;
+}
+
+p.presentacion {
+    text-align: center;
+    color: blue;
+}
+
+/* --- MEDIA QUERY ---- */
+@media screen and (max-width: 767px) {
+    section {
+        width: 80%;
+    }
+    .cardProducto {
+        width: 48%;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    section {
+        width: 90%;
+    }
+    .contenedor-flex {
+        flex-direction: column;
+    }
+    .cardProducto {
+        width: 98%;
+    }
+    
+}

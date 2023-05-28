@@ -1,6 +1,20 @@
 [
     {
         "id": 1,
+        "nombre": "Perros Adultos",
+        "presentacion": "Bolsa 20kg",
+        "marca": "Dr Perrot",
+        "precio": "$ 1.000,00",
+        "stock": 20,
+        "categoria": "Perro",
+        "sub-cat": "Adulto",
+        "linea": "Económica",
+        "comentario": "Formulado para cubrir las necesidades básicas.",
+        "imagen": "perrot-20kg.jpg",
+        "info-web": "https://www.sedasa.com.ar/drperrot.php" 
+    },
+    {
+        "id": 2,
         "nombre": "Perro Adulto Gourmet",
         "presentacion": "Bolsa 15kg",
         "marca": "Vagoneta",
@@ -14,7 +28,7 @@
         "info-web": "https://vagoneta.com.ar/#gourmet" 
     },
     {
-        "id": 2,
+        "id": 3,
         "nombre": "Perro Adulto",
         "presentacion": "Bolsa 20kg",
         "marca": "Vagoneta",
@@ -28,7 +42,7 @@
         "info-web": "https://vagoneta.com.ar/#adultos" 
     },
     {
-        "id": 3,
+        "id": 4,
         "nombre": "Perro Cachorro",
         "presentacion": "Bolsa 15kg",
         "marca": "Vagoneta",
@@ -42,7 +56,7 @@
         "info-web": "https://vagoneta.com.ar/#cachorros" 
     },
     {
-        "id": 4,
+        "id": 5,
         "nombre": "Gato",
         "presentacion": "Bolsa 20kg",
         "marca": "Vagoneta",
@@ -56,7 +70,7 @@
         "info-web": "https://vagoneta.com.ar/#gatos" 
     },
     {
-        "id": 5,
+        "id": 6,
         "nombre": "Gatito",
         "presentacion": "Bolsa 20kg",
         "marca": "Vagoneta",
@@ -70,7 +84,7 @@
         "info-web": "https://vagoneta.com.ar/#gatitos" 
     },
     {
-        "id": 6,
+        "id": 7,
         "nombre": "Mother Dog & Initial ",
         "presentacion": "Bolsa 3kg",
         "marca": "Advance",
@@ -84,12 +98,12 @@
         "info-web": "https://www.advance-affinity.com/es/es/perro/comida-perro/mother-dog-initial-25_es.html" 
     },
     {
-        "id": 7,
+        "id": 8,
         "nombre": "Mini Puppy",
         "presentacion": "Bolsa 3kg",
         "marca": "Advance",
         "precio": "$ 1.000,00",
-        "stock": 11,
+        "stock": 0,
         "categoria": "Perro",
         "sub-cat": "Cachorro",
         "linea": "Premium",
@@ -98,7 +112,7 @@
         "info-web": "https://www.advance-affinity.com/es/es/perro/comida-perro/mini-puppy-580_es.html" 
     },
     {
-        "id": 8,
+        "id": 9,
         "nombre": "Medium Puppy",
         "presentacion": "Bolsa 3kg",
         "marca": "Advance",
@@ -112,7 +126,7 @@
         "info-web": "https://www.advance-affinity.com/es/es/perro/comida-perro/medium-puppy-29_es.html" 
     },
     {
-        "id": 9,
+        "id": 10,
         "nombre": "Puppy Maxi",
         "presentacion": "Bolsa 3kg",
         "marca": "Advance",
@@ -126,7 +140,7 @@
         "info-web": "https://www.advance-affinity.com/es/es/perro/comida-perro/maxi-puppy-30_es.html" 
     },
     {
-        "id": 10,
+        "id": 11,
         "nombre": "Adult Mini",
         "presentacion": "Bolsa 3kg",
         "marca": "Advance",
@@ -140,7 +154,7 @@
         "info-web": "https://www.advance-affinity.com/es/es/perro/comida-perro/adult-mini-32_es.html" 
     },
     {
-        "id": 11,
+        "id": 12,
         "nombre": "Adult Medium",
         "presentacion": "Bolsa 3kg",
         "marca": "Advance",
@@ -154,7 +168,7 @@
         "info-web": "https://www.advance-affinity.com/es/es/perro/comida-perro/adult-medium-33_es.html" 
     },
     {
-        "id": 12,
+        "id": 13,
         "nombre": "Adult Maxi",
         "presentacion": "Bolsa 14kg",
         "marca": "Advance",

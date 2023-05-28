@@ -13,9 +13,11 @@ const cargarDatos = () => {
             produ.nombre, 
             produ.marca, 
             produ.precio,
+            produ.stock,
             produ.presentacion, 
             produ.comentario,
-            produ.imagen
+            produ.imagen,
+            produ.linea
             ),
     );
     console.log(datosObjeto);
