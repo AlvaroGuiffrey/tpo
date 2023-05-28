@@ -5,6 +5,8 @@ import { idValueInput, parent } from "./config/config.js";
 /* PROMO */
 const botonReg = document.querySelector("#bt-reg")
 botonReg.addEventListener("click", function() {
+  const formulario = document.querySelector("form");
+  formulario.reset();
   document.getElementById('formReg').style.display='block';
 });
 
@@ -22,7 +24,7 @@ document.querySelector("form").addEventListener("submit", async (e) => {
   dataForm.append("fecha", new Date().toString());
   dataForm.append("id", "INCREMENT");
 
-  console.log(dataForm);
+  //console.log(dataForm);
 
   const URL = "https://sheetdb.io/api/v1/mnulmpy28bm64";
 
