@@ -16,26 +16,76 @@ botonClose.addEventListener("click", function() {
 });
 
 /* REGISTRO PROMO EN SheetDB*/
+/* La verificación de los datos se hace con JavaScript */
 document.querySelector("form").addEventListener("submit", async (e) => {
   e.preventDefault();
-  const form = document.querySelector("form");
-  let dataForm = new FormData(form);
+  
+  let valido = false;
+  document.getElementById('mensError').style.display='none';
+  
+  let exp_nombre = /^[A-ZÑa-zñáéíóúÁÉÍÓÚ'° ]+$/;
+  let exp_celular = /^[ 0-9_-]+$/;
+  let exp_mail = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/;
+  
+  let fnombre = document.getElementById("nombre");
+  fnombre.setAttribute('style', 'border: 0');
+  if (!exp_nombre.test(fnombre.value) || fnombre.length < 4){
+    valido = false;
+    fnombre.setAttribute('style', 'border: 2px solid red');
+  } else {
+    valido = true;
+  }
+  
+  let fcelular = document.getElementById("celular");
+  fcelular.setAttribute('style', 'border: 0');
+  if (!exp_celular.test(fcelular.value) || fcelular.length < 10){
+    valido = false;
+    fcelular.setAttribute('style', 'border: 2px solid red');
+  } else {
+    valido = true;
+  }
 
-  dataForm.append("fecha", new Date().toString());
-  dataForm.append("id", "INCREMENT");
+  let fmail = document.getElementById("mail");
+  fmail.setAttribute('style', 'border: 0');
+  if (!exp_mail.test(fmail.value) || fmail.length < 10){
+    valido = false;
+    fmail.setAttribute('style', 'border: 2px solid red');
+  } else {
+    valido = true;
+  }
 
-  //console.log(dataForm);
+  let fmascota = document.getElementById("mascota");
+  fmascota.setAttribute('style', 'border: 0');
+  if (!exp_nombre.test(fmascota.value) || fmascota.length < 3){
+    valido = false;
+    fmascota.setAttribute('style', 'border: 2px solid red');
+  } else {
+    valido = true;
+  }
 
-  const URL = "https://sheetdb.io/api/v1/mnulmpy28bm64";
+  if (valido == true) {
+    const form = document.querySelector("form");
+  
+    let dataForm = new FormData(form);
 
-  await fetch(URL, {
-      method: "POST",
-      body: dataForm,
-  });
+    dataForm.append("fecha", new Date().toString());
+    dataForm.append("id", "INCREMENT");
 
-  alert("¡Gracias por inscribirte a la PROMO! 😎");
-  document.getElementById('formReg').style.display='none';
- 
+    //console.log(dataForm);
+
+    const URL = "https://sheetdb.io/api/v1/mnulmpy28bm64";
+
+    await fetch(URL, {
+        method: "POST",
+        body: dataForm,
+    });
+
+    document.getElementById('formReg').style.display='none';
+    document.getElementById('mensaje').style.display='flex';
+  } else {
+    document.getElementById('mensError').style.display='flex';
+    document.getElementById('textoError').innerText = "Datos ingresados con error."
+  }
 });
 
 /* EXPERIENCIAS */
