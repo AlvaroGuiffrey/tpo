@@ -20,50 +20,49 @@ botonClose.addEventListener("click", function() {
 document.querySelector("form").addEventListener("submit", async (e) => {
   e.preventDefault();
   
-  let valido = false;
   document.getElementById('mensError').style.display='none';
   
   let exp_nombre = /^[A-ZÑa-zñáéíóúÁÉÍÓÚ'° ]+$/;
-  let exp_celular = /^[ 0-9_-]+$/;
+  let exp_celular = /^([ 0-9_-]{9,20})+$/;
   let exp_mail = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/;
   
   let fnombre = document.getElementById("nombre");
   fnombre.setAttribute('style', 'border: 0');
+  let valido1 = false;
   if (!exp_nombre.test(fnombre.value) || fnombre.length < 4){
-    valido = false;
     fnombre.setAttribute('style', 'border: 2px solid red');
   } else {
-    valido = true;
+    valido1 = true;
   }
   
   let fcelular = document.getElementById("celular");
   fcelular.setAttribute('style', 'border: 0');
+  let valido2 = false;
   if (!exp_celular.test(fcelular.value) || fcelular.length < 10){
-    valido = false;
     fcelular.setAttribute('style', 'border: 2px solid red');
   } else {
-    valido = true;
+    valido2 = true;
   }
 
   let fmail = document.getElementById("mail");
   fmail.setAttribute('style', 'border: 0');
+  let valido3 = false;
   if (!exp_mail.test(fmail.value) || fmail.length < 10){
-    valido = false;
     fmail.setAttribute('style', 'border: 2px solid red');
   } else {
-    valido = true;
+    valido3 = true;
   }
 
   let fmascota = document.getElementById("mascota");
   fmascota.setAttribute('style', 'border: 0');
+  let valido4 = false;
   if (!exp_nombre.test(fmascota.value) || fmascota.length < 3){
-    valido = false;
     fmascota.setAttribute('style', 'border: 2px solid red');
   } else {
-    valido = true;
+    valido4 = true;
   }
 
-  if (valido == true) {
+  if (valido1 == true && valido2 == true && valido3 == true && valido4 == true) {
     const form = document.querySelector("form");
   
     let dataForm = new FormData(form);
