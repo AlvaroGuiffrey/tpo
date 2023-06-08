@@ -1,0 +1,126 @@
+section {
+    width: 70%;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+section h3 {
+    text-align: center;
+    color: blue;
+}
+
+section p {
+    font-size: 0.8em;
+    text-align: justify;
+    padding-top: 5px;
+}
+
+.persona {
+    width: 31%;
+    float: left;
+    margin: 1%;
+    border: 1px solid #ddd;
+    border-radius: 0.25em;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.persona img.foto {
+    border-radius: 5%;
+    margin: 0.8em 0 0 0;
+}
+
+.persona h5 {
+    font-weight: normal;
+    color: #0b6fe1;
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.persona p.categoria {
+    font-size: 0.6em;
+    font-style: italic;
+    text-align: center;
+}
+
+.persona p {
+    font-size: 0.7em;
+    padding: 0 0.4em 0.4em 0.4em;
+    text-align: left;
+}
+
+button.contacto {
+    background-color: blue;
+    color: white;
+    border-color: blue;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+button.contacto.act {
+    background-color: grey;
+    border-color: grey;
+}
+
+button.contacto:hover {
+    background-color: #2e64a1;
+}
+
+button.contacto i {
+    font-size: 0.7em;
+}
+
+span.dato {
+    display: block;
+    font-size: 11px;    
+}
+
+.dato-qr {
+    width: 50%;
+    transition: transform .2s;
+}
+
+.dato-qr:hover {
+    -ms-transform: scale(3); /* IE 9 */
+    -webkit-transform: scale(3); /* Safari 3-8 */
+    transform: scale(3) translate(0px, -40px);
+}
+
+/* --- MEDIA QUERY ---- */
+@media screen and (max-width: 767px) {
+    section {
+        width: 80%;
+    }
+    .persona {
+        width: 48%;
+    }
+    .dato-qr:hover {
+        -ms-transform: scale(3); /* IE 9 */
+        -webkit-transform: scale(3); /* Safari 3-8 */
+        transform: scale(3) translate(0px, -40px); 
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .dato-qr:hover {
+        -ms-transform: scale(4); /* IE 9 */
+        -webkit-transform: scale(4); /* Safari 3-8 */
+        transform: scale(4) translate(0px, -40px); 
+    }
+}
+  
+@media screen and (max-width: 480px) {
+    section {
+        width: 90%;
+    }
+    .persona {
+        width: 98%;
+    }
+    .dato-qr:hover {
+        -ms-transform: scale(2); /* IE 9 */
+        -webkit-transform: scale(2); /* Safari 3-8 */
+        transform: scale(2) translate(0px, -40px); 
+        
+    }
+}
